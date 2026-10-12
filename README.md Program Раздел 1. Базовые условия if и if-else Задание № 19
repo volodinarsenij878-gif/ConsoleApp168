@@ -1,0 +1,25 @@
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    namespace Program19
+    {
+    internal class Program
+    {
+        static void Main()
+        { 
+            Console.Write("Введите число: "); 
+            if (int.TryParse(Console.ReadLine(), out int n))
+            {
+                int res = n % 2 == 0 ? n / 2 : n * 3;
+                Console.WriteLine($"Результат: {res}");
+            }
+            else
+            {
+                Console.WriteLine("Ошибка ввода.");
+            }
+        }
+    }
+    }
